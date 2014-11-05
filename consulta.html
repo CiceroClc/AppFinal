@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        
+        <!-- bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+         
+        <link rel="stylesheet" type="text/css" href="css/mapa.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" href="js/libs/jquery-mobile/jquery.mobile.css"/>
+        <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-mobile/jquery.mobile.js"></script>
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        
+        
+       
+        <title>Ache seu EcoPonto</title>
+    </head>
+    <body>
+        <div data-role="content">
+            <form>
+                <fieldset data-role="controlgroup">
+                    <legend>Consulta por tipo de ponto de coleta:</legend>
+                    <input type="checkbox" name="checkboxRe" id="checkboxRe">
+                    <label for="checkboxRe">Recicláveis</label>
+                    <input type="checkbox" name="checkboxEl" id="checkboxEl">
+                    <label for="checkboxEl">Eletroeletrônico</label>
+                    <input type="checkbox" name="checkboxOl" id="checkboxOl">
+                    <label for="checkboxOl">Óleo de Cozinha</label>
+                    <input type="checkbox" name="checkboxBa" id="checkboxBa">
+                    <label for="checkboxBa">Baterias/Pilhas</label>
+                    <input type="checkbox" name="checkboxRm" id="checkboxRm">
+                    <label for="checkboxRm">Remédios</label>
+                    <input type="checkbox" name="checkboxEn" id="checkboxEn">
+                    <label for="checkboxEn">Entulho</label>
+                    <input type="checkbox" name="checkboxOu" id="checkboxOu">
+                    <label for="checkboxOu">Outros</label>
+                </fieldset>
+                    </form>
+                    
+                    <button onclick="selectMarker()">Consultar</button>
+        </div>
+        
+        
+         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/mapa.js"></script>
+    </body>
+</html>

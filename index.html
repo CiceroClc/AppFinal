@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+         
+        <!-- bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/mapa.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" href="js/libs/jquery-mobile/jquery.mobile.css"/>
+        <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-mobile/jquery.mobile.js"></script>
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <title>Ache seu EcoPonto</title>
+       
+    </head>
+    <body>
+      
+      
+        
+        <input type="hidden" id="Vlongitude"/>
+        <input type="hidden" id="Vlatitude"/>
+     <div style="width:100%;height:100%; z-index:50">
+                  
+            <div data-role="content" id="conteudoMapa" style="padding:0;">                
+                <!--Mapa-->                
+                <div id="map" style="width:100%;height:100%; z-index:50">
+                </div> 
+            </div>                   
+  
+              <div id="botoesMapa">
+                      
+                      
+                <button type="button" class="btn btn-success btn-lg"  onclick="consultar()">
+                  <span class="glyphicon glyphicon-map-marker botaoMapa"></span><br>Pontos
+                </button>
+
+
+                <button type="button" class="btn btn-info btn-lg"  onclick="home()">
+                      <span class="glyphicon glyphicon-home botaoMapa"></span> <br>Início
+                    </button>
+
+
+                <button type="button" class="btn btn-warning btn-lg"  onclick="tracaRota()">
+                    <span class="glyphicon glyphicon-share-alt botaoMapa"></span><br>Rotas
+                </button>
+               
+                          
+            </div>
+
+             <div id="compartilhar">
+                    
+                    <a class="botaoSocial" href="http://www.facebook.com/sharer.php?u=http://www.acheseuecoponto.com.br" data-role="link" data-rel="dialog">
+                       <img class="imagemBotao" src="./img/facebook.png"/>
+                       <br>Nossa<br>Página
+                    </a>
+                 
+                    <a class="botaoSocial"  href="http://www.facebook.com/sharer.php?u=http://www.acheseuecoponto.com.br" data-role="link" data-rel="dialog">
+                       <img class="imagemBotao" src="./img/facebook.png"/>
+                       <br>Selo<br>Verde
+                    </a>
+                    <a class="botaoSocial" href="https://twitter.com/intent/tweet?original_referer=http://www.acheseuecoponto.com.br&source=tweetbutton&text=AcheSeuEcoPonto - Coleta Seletiva Web&url=http://www.acheseuecoponto.com.br" data-role="link" data-rel="dialog">
+                        <img class="imagemBotao" src="./img/twitter.png"/>
+                        <br>Seguir
+                    </a>
+             </div>
+                              
+        </div>        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/mapa.js"></script>
+    </body>
+</html>
